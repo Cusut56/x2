@@ -1,9 +1,9 @@
 //////// Exercise x2:  modularize exercise x1, and add dog to chase hero.
-//////// Whoever Whoever  (CST 112; today's date?)
+//////// Tara Cusumano  (CST 112; September 27)
 
 //////// Please change these to your name and today's date.
-String author=  "Whoever Whatever";
-String title=  " ??? ";
+String author=  "Tara Cusumano";
+String title=  " Dog ";
 String help=  " Click to relocate hero \n 'q' to quit; 'r' to reset. ";
 
 
@@ -48,7 +48,12 @@ void messages() {
 void hero() {
   /* INSERT YOUR CODE HERE! */
   /* REPLACE THIS STUB! */  text( "[[[[ Zoog. ]]]]", 200, 200 );
+  
+  ellipse(x+15,y-25,10,10);
+  fill(25);
+  ellipse(x+25,y-20,41,46);
   rect( x,y, 50,80 );
+  line(x-50,y-40,110,110);
 }
 void dog() {
   dogX=  dogX - (dogX-x)/30;
@@ -57,7 +62,9 @@ void dog() {
   text( dogY, 10, 20 );
   //
   fill( 150,0,0 );
+
   rect(dogX,dogY, 60,30 );
+  
   /* INSERT YOUR CODE HERE! */
   /* REPLACE THIS STUB! */  text( "woof, woof!d!!", 150, 150 );
 }
@@ -81,6 +88,3 @@ void keyPressed() {
   }
   /* INSERT YOUR CODE HERE! */
 }
-   
-   
-
