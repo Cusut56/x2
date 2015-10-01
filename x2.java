@@ -64,6 +64,7 @@ void dog() {
   fill( 150,0,0 );
 
   rect(dogX,dogY, 60,30 );
+  rect(dogX-15,dogY+10,10,10);
   
   /* INSERT YOUR CODE HERE! */
   /* REPLACE THIS STUB! */  text( "woof, woof!d!!", 150, 150 );
